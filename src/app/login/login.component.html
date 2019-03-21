@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <ion-item >
+    <ion-label position="floating">Username</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>   
+  <ion-item>
+    <ion-label position="floating" >Password</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>   
+  
+  <button expand="block" class="loginBtn" mat-flat-button color="primary">Login</button>
+  <ion-grid>
+    <ion-row class="userTxt">
+      <ion-col>
+        <a routerLink="/forgot-pwd">Forgot Password</a>
+      </ion-col>
+      <ion-col>
+        <a routerLink="/registration">Not a existing user? Register</a>
+      </ion-col>
+    </ion-row>
+  </ion-grid>  
+</ion-content>

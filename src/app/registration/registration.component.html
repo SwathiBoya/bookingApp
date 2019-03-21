@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>Sign Up</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content padding>
+    <ion-item >
+      <ion-label position="floating">Username</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>   
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>   
+    <ion-item>
+      <ion-label position="floating">Confirm Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="floating">E-Mail Id</ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="floating">Date of Birth</ion-label>
+        <ion-datetime displayFormat="MM DD YYYY" placeholder="Select Date"></ion-datetime>
+    </ion-item>
+    
+    <button expand="block" class="loginBtn" mat-flat-button color="primary" routerLink="/login">Register</button>
+  </ion-content>

@@ -1,0 +1,24 @@
+ion-button {
+    font-weight: 300;
+}
+.loginBtn{
+    margin-top: 25px;
+    width: 100%;
+    background: #073d5e;
+}
+ion-content{
+    --background: #fff url('../../assets/login5.png') no-repeat center center / cover;
+   
+// --ion-background-color:#111D12;
+}
+ion-item{
+   --ion-background-color : none;
+   color: #000;
+}
+ion-toolbar{
+    --background: #073d5e;
+    color: #fff;
+}
+.userTxt ion-col a{
+    color: #fff;
+}
