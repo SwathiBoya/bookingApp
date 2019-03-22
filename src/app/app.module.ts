@@ -13,11 +13,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { ForgotPwdComponent } from './forgot-pwd/forgot-pwd.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [AppComponent,LoginComponent,RegistrationComponent,ForgotPwdComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,BrowserAnimationsModule, MatButtonModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,BrowserAnimationsModule, MatButtonModule,FormsModule],
   providers: [
     StatusBar,
     SplashScreen,

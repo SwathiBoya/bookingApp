@@ -14,4 +14,11 @@ import { Tab1Page } from './tab1.page';
   ],
   declarations: [Tab1Page]
 })
-export class Tab1PageModule {}
+export class Tab1PageModule {
+  constructor() {
+  }
+  bannersImage = [
+    { image: "assets/login.jpg" },
+    { image: "assets/login2.jpg" }
+  ]
+}
