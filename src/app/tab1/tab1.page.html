@@ -7,9 +7,55 @@
 </ion-header>
 
 <ion-content>
-    <ion-slides autoplay=300>
-        <ion-slide  *ngFor = "let banners of bannersImage">
-          <img src={{banners.image}}>
-        </ion-slide>
-      </ion-slides>
+  <!-- <ion-slides #mypage (ionSlideDidLoad)="ionSlideDidLoad1(mypage)"  autoplay="5000" speed="3000" pager="true" loop="true">
+    <ion-slide *ngFor="let banners of slideData">
+      <img src="banners.image">
+    </ion-slide>
+  </ion-slides> -->
+  <ion-slides loop="true" #mypage (ionSlideDidLoad)="ionSlideDidLoad1(mypage)"  autoplay="5000" speed="3000" pager="true">
+    <ion-slide>
+      <img src="assets/slide1.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/slide2.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/slide4.jpg">
+    </ion-slide>
+  </ion-slides>
+  <ion-text class="movieTxt">
+      <h1>Movies</h1>
+    </ion-text>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+          <ion-card class="myCard">
+              <img src="/assets/tn6.jpg"/>
+              <div class="myOverlay">
+                 <div class="card-title">San Francisco</div>
+                 <div class="card-subtitle">90% <ion-icon name="heart" class="heartIcon"></ion-icon></div>
+              </div>
+            </ion-card>        
+      </ion-col>
+      <ion-col>
+          <ion-card class="myCard">
+              <img src="/assets/tn2.jpg"/>
+              <div class="myOverlay">
+                 <div class="card-title">San Francisco</div>
+                 <div class="card-subtitle">99% <ion-icon name="heart" class="heartIcon"></ion-icon></div>
+              </div>
+            </ion-card>  
+      </ion-col>
+      <ion-col>
+          <ion-card class="myCard">
+              <img src="/assets/tn3.jpg"/>
+              <div class="myOverlay">
+                 <div class="card-title">San Francisco</div>
+                 <div class="card-subtitle">80% <ion-icon name="heart" class="heartIcon"></ion-icon></div>
+              </div>
+            </ion-card>  
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
 </ion-content>

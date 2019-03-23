@@ -1,4 +1,37 @@
-.welcome-card ion-img {
-  max-height: 35vh;
-  overflow: hidden;
+ion-toolbar{
+    --background: #073d5e;
+    color: #fff;
 }
+.movieTxt{
+    color: #073d5e;
+}
+.movieTxt h1 {
+    margin-left: 13px;
+    font-size: 26px;
+}
+.myCard{
+    position:relative;
+    margin: 0px;
+  }
+  
+  .myOverlay{
+      width: 100%;
+      height: 60px;
+      position: absolute;
+      z-index: 99;
+      bottom: 0px;
+      opacity: 0.7;
+      background: #052940;
+      color: #fff;
+  
+  }
+  img{
+    width:100%;
+    height:100%;
+  }
+  .card-title, .card-subtitle{
+      text-align: center;
+  }
+  .heartIcon{
+      color: red;
+  }
